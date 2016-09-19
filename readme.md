@@ -34,3 +34,6 @@ The two most important files are the following:
 2. **score_aggregator.py** - calls each of the individual scoring routines and aggregates them into one score.
 
 The file **main.py** simply calls **user_inputs.py**, which gathers all data about the company and returns a company object (the company class can be found in the **company_info.py** file). Then, **score_aggregator.py** is used to calculate and print a score for the company.
+
+#Interpreting the output
+The output is number between 0 and 1. Higher numbers correspond to higher creditworthiness. This should not be used as an accurate representation of a company's chance to default, but rather a way of comparing companies against each other.
